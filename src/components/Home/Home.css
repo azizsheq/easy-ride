@@ -2,10 +2,14 @@
     background-color: #333;
 }
 .home-card-div{
-    display: grid 3;
-    margin-left: 125px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 100px;
     margin-right: 100px;
     padding-top: 50px;
+    height: fit-content;
+    justify-content: center;
+    align-content: center;
 }
 .home-image-div{
     background-image: url("https://i.pinimg.com/originals/42/50/cf/4250cf3e0be36300f7f2db83c6827ca6.jpg");
@@ -21,7 +25,8 @@
  /* Responsive */
  @media screen and (max-width: 600px) {
     .home-card-div{
-        display: grid 3;
+        display: grid;
+        grid-template-columns: auto;
         margin-left: 100px;
         margin-right: 100px;
         padding-top: 50px;
