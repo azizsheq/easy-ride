@@ -1,6 +1,40 @@
-.row{
-    display: inline-block;
-    align-content: center;
-    background-color: wheat;
-    padding: 10px;
+.home-main-div{
+    background-color: #333;
 }
+.home-card-div{
+    display: grid 3;
+    margin-left: 125px;
+    margin-right: 100px;
+    padding-top: 50px;
+}
+.home-image-div{
+    background-image: url("https://i.pinimg.com/originals/42/50/cf/4250cf3e0be36300f7f2db83c6827ca6.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    opacity: 0.5;
+    height: 300px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
+    color: #F5FFFA;
+}
+ /* Responsive */
+ @media screen and (max-width: 600px) {
+    .home-card-div{
+        display: grid 3;
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-top: 50px;
+    }
+    .home-image-div {
+        background-image: url("https://i.pinimg.com/originals/42/50/cf/4250cf3e0be36300f7f2db83c6827ca6.jpg");
+        background-size: 100% 100%;
+        background-repeat: repeat;
+        opacity: 0.5;
+        height: 150px;
+        text-align: center;
+        padding-top: 25px;
+        font-size: 25px;
+        color: #F5FFFA;
+    }
+  }

@@ -23,10 +23,10 @@ const DataCard = (props) => {
             <div className="card">
                 <img src={leagueImage} alt={strLeagueAlternate} />
                 <div className="container">
-                    <h4>{strLeague}</h4>
-                    <small>{strLeagueAlternate}</small>
-                    <p>{idLeague}</p>
-                    <p>{strSport}</p>
+                    <h2>{strLeague}</h2>
+                    {/* <small>{strLeagueAlternate}</small> */}
+                    {/* <p>{idLeague}</p> */}
+                    <p>Sports Type: {strSport}</p>
                     <button 
                         className="btn-explore"
                         onClick={() => handleClick(idLeague)}

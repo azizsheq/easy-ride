@@ -18,19 +18,16 @@ const Home = () => {
     },[])
 
     return (
-        <div className="row">
-            <h1>total data - {info.length}</h1>
-            {/* {
-                info.map(dt => <p>
-                    {dt.idLeague}
-                    {dt.strLeague}
-                    {dt.strLeagueAlternate}
-                    {dt.strSport}
-                    </p>)
-            } */}
-            {
-                info.map(dt => <DataCard leagues={dt} key={dt.idLeague}/>)
-            }
+        <div className="home-main-div">
+            <div className="home-image-div">
+                <h1>Team Tracker</h1>
+            </div>
+            <div className="home-card-div">
+                {/* <h1>total data - {info.length}</h1> */}
+                {
+                    info.map(dt => <DataCard leagues={dt} key={dt.idLeague}/>)
+                }
+            </div>
         </div>
     );
 };

@@ -1,19 +1,9 @@
   /* Float four columns side by side */
   .column {
-    float: left;
-    width: 30%;
+    display: inline-block;
     padding: 0 10px;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
-  
+    
+  }  
   /* Style the counter cards */
   .card {
     box-shadow: 0 4px 8px 0 rgba(167, 0, 0, 0.2);
@@ -21,31 +11,65 @@
     padding: 10px;
     margin-bottom: 15px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: white;
     height: 450px;
+    width: 350px;
   }
 .card img {
     height: 50%;
     width: 75%;
 }
-.container{
-
-}
 .btn-explore{
-    background-color: #4CAF50; /* Green */
+    background-color: #000080;
     border: none;
+    border-radius: 5px;
     color: white;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    font-weight: 500;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
 .btn-explore:hover{
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
+    background-color: #4169E1; 
 }
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(167, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        background-color: white;
+        height: 400px;
+        width: 300px;
+      }
+    .card img {
+        height: 45%;
+        width: 70%;
+    }
+    .btn-explore{
+        background-color: #000080;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+  }
