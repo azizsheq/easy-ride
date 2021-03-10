@@ -12,7 +12,7 @@ const Home = () => {
         .then(res => res.json())
         .then(data => {
             const first10 = data.leagues.slice(0,12);
-            console.log(first10);
+            // console.log(first10);
             setInfo(first10)
         })
     },[])
