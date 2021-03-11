@@ -30,10 +30,10 @@ const CardDetails = () => {
             
             <div className="container">
                 <div className="bannerDiv">
-                    <img src={league[0]?.strStadiumThumb}/>
+                    <img src={league[0]?.strStadiumThumb} alt='available stadium cover'/>
                 </div>
                 <div className="badgeDiv">
-                    <img src={league[0]?.strTeamBadge}/>  
+                    <img src={league[0]?.strTeamBadge} alt='badge here'/>  
                 </div>
             </div>
 
@@ -48,7 +48,7 @@ const CardDetails = () => {
 
                 <div className="cd-badge">
                     {
-                        league[0]?.strGender === 'Male' ? <img src={male}/> : <img src={female}/>
+                        league[0]?.strGender === 'Male' ? <img src={male} alt='male'/> : <img src={female} alt='female'/>
                     }
                 </div>
             </div>
