@@ -59,7 +59,7 @@ const CardDetails = () => {
             </div>
 
             <div className="details-footer">
-                <a href={`http://${league[0]?.strFacebook}`} target="_blank"><FontAwesomeIcon icon={faFacebookSquare}/></a>
+                <a href={`http://${league[0]?.strFacebook}`}><FontAwesomeIcon icon={faFacebookSquare}/></a>
                 <a href={`http://${league[0]?.strTwitter}`}><FontAwesomeIcon icon={faTwitterSquare}/></a>
                 <a href={`http://${league[0]?.strInstagram}`}><FontAwesomeIcon icon={faInstagramSquare}/></a>
             </div>
