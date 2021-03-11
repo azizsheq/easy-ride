@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation/Navigation";
 import CardDetails from "./components/CardDetails/CardDetails";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <NoMatch/>
         </Route>
       </Switch>
+      <Footer/>
     </Router>
   );
 }

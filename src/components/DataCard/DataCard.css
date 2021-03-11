@@ -5,8 +5,8 @@
   }  
   /* Style the counter cards */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(167, 0, 0, 0.2);
-    border-radius: 5px;
+    box-shadow: 0 6px 10px 0 rgba(111, 114, 114, 0.774), 0 6px 10px 0 rgba(111, 114, 114, 0.774);
+    border-radius: 15px;
     padding: 25px;
     margin-bottom: 15px;
     text-align: center;
@@ -44,8 +44,8 @@
       margin-bottom: 20px;
     }
     .card {
-        box-shadow: 0 4px 8px 0 rgba(167, 0, 0, 0.2);
-        border-radius: 5px;
+        box-shadow: 0 6px 10px 0 rgba(111, 114, 114, 0.774), 0 6px 10px 0 rgba(111, 114, 114, 0.774);
+        border-radius: 15px;
         padding: 10px 10px 10px 10px;
         margin-bottom: 5px;
         text-align: center;
