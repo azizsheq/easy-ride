@@ -30,10 +30,10 @@ const CardDetails = () => {
             
             <div className="container">
                 <div className="bannerDiv">
-                    <img src={league[0]?.strStadiumThumb} alt={league[0]?.strTeam}/>
+                    <img src={league[0]?.strStadiumThumb}/>
                 </div>
                 <div className="badgeDiv">
-                    <img src={league[0]?.strTeamBadge} alt={league[0]?.strTeam}/>  
+                    <img src={league[0]?.strTeamBadge}/>  
                 </div>
             </div>
 
