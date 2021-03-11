@@ -26,34 +26,43 @@ const CardDetails = () => {
     // console.log("Team : ",league[0]?.strTeam);
 
     return (
-        <div>
-            <div>
-                <img src={league[0]?.strStadiumThumb} alt=""/>
-                <img src={league[0]?.strTeamBadge} alt=""/>
-                
-            </div>
-            <div>
-                <div>
-                    <img src=""/>
+        <div className="mainDiv">
+            
+            <div className="container">
+                <div className="bannerDiv">
+                    <img src={league[0]?.strStadiumThumb} alt=""/>
                 </div>
-                <div>
-                    <p>{league[0]?.strTeam}</p>
+                <div className="badgeDiv">
+                    <img src={league[0]?.strTeamBadge} alt=""/>  
+                </div>
+            </div>
+
+            <div className="conditional-div">
+                <div className="cd-text">
+                    <h1>{league[0]?.strTeam}</h1>
                     <p><FontAwesomeIcon icon={faMapPin}/> &nbsp; Founded: {league[0]?.intFormedYear}</p>
                     <p><FontAwesomeIcon icon={faFlag}/> &nbsp; Country: {league[0]?.strCountry}</p>
                     <p><FontAwesomeIcon icon={faFutbol}/> &nbsp; Sport Type: {league[0]?.strSport}</p>
                     <p><FontAwesomeIcon icon={faMars}/> &nbsp; Gender: {league[0]?.strGender}</p>
                 </div>
-            </div>
-            <div>
-                <p>{league[0]?.strStadiumDescription}</p>
 
+                <div className="cd-badge">
+                    <img src={league[0]?.strTeamBadge}/>
+                    {/* <img src={female}/>  */}
+                </div>
+            </div>
+
+            <div className="detailsDiv">
+                <p>{league[0]?.strStadiumDescription}</p>
                 <p>{league[0]?.strDescriptionEN}</p>
             </div>
+
             <div className="details-footer">
                 <a href={`http://${league[0]?.strFacebook}`} target="_blank"><FontAwesomeIcon icon={faFacebookSquare}/></a>
                 <a href={`http://${league[0]?.strTwitter}`}><FontAwesomeIcon icon={faTwitterSquare}/></a>
                 <a href={`http://${league[0]?.strInstagram}`}><FontAwesomeIcon icon={faInstagramSquare}/></a>
             </div>
+
         </div>
     );
 };

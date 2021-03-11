@@ -8,6 +8,8 @@ import {
 import NoMatch from "./components/NoMatch/NoMatch";
 import Navigation from "./components/Navigation/Navigation";
 import CardDetails from "./components/CardDetails/CardDetails";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -22,6 +24,12 @@ function App() {
         </Route>
         <Route path="/leagueDetails/:id">
           <CardDetails/>
+        </Route>
+        <Route path="/about">
+          <About/>
+        </Route>
+        <Route path="/contact">
+          <Contact/>
         </Route>
         <Route path="*">
           <NoMatch/>
