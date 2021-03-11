@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div className="home-main-div">
             <div className="home-image-div">
-                <h1>Team Tracker</h1>
+                <h1>leaguepedia</h1>
             </div>
             <div className="home-card-div">
                 {/* <h1>total data - {info.length}</h1> */}
