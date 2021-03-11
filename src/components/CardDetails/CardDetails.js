@@ -4,8 +4,8 @@ import { useParams } from 'react-router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faTwitterSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons'
 import { faMapPin, faFlag, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons'
-import { female } from '../../ConditionalPhoto/female.png'
-import { male } from '../../ConditionalPhoto/male.png'
+import  female  from '../../ConditionalPhoto/female.png'
+import  male from '../../ConditionalPhoto/male.png'
 
 
 const CardDetails = () => {
@@ -24,6 +24,16 @@ const CardDetails = () => {
     }, [id]);
 
     // console.log("Team : ",league[0]?.strTeam);
+
+    // let condImage;
+    // if(league[0]?.strGender === "Male"){
+    //     condImage = <img src={male} alt="male"/> 
+    // }
+    // else{
+    //     condImage = <img src={female} alt="male"/> 
+    // }
+
+
 
     return (
         <div className="mainDiv">
@@ -47,8 +57,9 @@ const CardDetails = () => {
                 </div>
 
                 <div className="cd-badge">
-                    <img src={league[0]?.strTeamBadge}/>
-                    {/* <img src={female}/>  */}
+                    {
+                        league[0]?.strGender === 'Male' ? <img src={male}/> : <img src={female}/>
+                    }
                 </div>
             </div>
 
