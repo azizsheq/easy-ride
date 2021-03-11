@@ -25,25 +25,15 @@ const CardDetails = () => {
 
     // console.log("Team : ",league[0]?.strTeam);
 
-    // let condImage;
-    // if(league[0]?.strGender === "Male"){
-    //     condImage = <img src={male} alt="male"/> 
-    // }
-    // else{
-    //     condImage = <img src={female} alt="male"/> 
-    // }
-
-
-
     return (
         <div className="mainDiv">
             
             <div className="container">
                 <div className="bannerDiv">
-                    <img src={league[0]?.strStadiumThumb} alt=""/>
+                    <img src={league[0]?.strStadiumThumb} alt={league[0]?.strTeam}/>
                 </div>
                 <div className="badgeDiv">
-                    <img src={league[0]?.strTeamBadge} alt=""/>  
+                    <img src={league[0]?.strTeamBadge} alt={league[0]?.strTeam}/>  
                 </div>
             </div>
 
